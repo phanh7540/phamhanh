@@ -1,4 +1,4 @@
-var socket = io("http://localhost:3000");
+var socket = io("https://baidoxexxxx.herokuapp.com/");
     socket.on("server-send-dki-thatbai", function(){
       alert("Sai Username (co nguoi da dang ki roi!!!)");
     });// mghe đang ký thất bại 
