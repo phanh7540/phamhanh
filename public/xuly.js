@@ -1,8 +1,14 @@
-var socket = io("https://baidoxexxxx.herokuapp.com/");
+var socket = io("http://localhost:3000");
     socket.on("server-send-dki-thatbai", function(){
       alert("Sai Username (co nguoi da dang ki roi!!!)");
     });// mghe đang ký thất bại 
 
+    socket.on("otrong", (data)=>{
+      $("#otrong").html(data.message)
+
+      console.log(data)
+    });// mghe đang ký thất bại 
+    
     socket.on("server-send-danhsach-Usersa", function(data){
       $("#list_ten_use").html("");
 

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hello smart parking</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">       
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">   
+    <link rel="stylesheet" type="text/css" href="layout.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+
+    
+  </head>
+  <body>
+      
+
+    <div id="login_register">
+
+      <div id="loginForm">
+        <h3> ues regiter </h3>
+        <input type="text" id="id_name_register" />
+        <input type="button" value="name_register" id="id_name" />
+        <input type="text" id="id_license_register" />
+        <input type="button" value="license_register" id="id_license" />
+        <div>
+        <input type="button" value="ues register" id="id_uesregister" />
+        </div>
+      </div>
+
+
+
+      <div id="list_regiter">
+        <h2 id="tieude"> subscriber list </h2>
+        <div id="left">
+          <div id="ten_use">account name</div>
+          <div id="list_ten_use">.......</div>
+        </div>
+        <div id="right">
+          <div id="bienso_use">license register </div>
+          <div id="list_bienso_use">........</div>
+          </div>
+          <div>
+            <input type="button" id="btnLogout" value="Logout">
+          </div>
+
+        </div>
+    </div>
+    <div id="hienthi">
+      <div  class="allin "> 
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+       <!-- full ngang  -->
+       <div class="container-fluid">
+         <a class="navbar-branch" href="#">
+           <img src="./images/logo.png" height="70">
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" 
+           data-target="#navbarResponsive">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarResponsive">
+           <ul class="navbar-nav ml-auto">
+             <li>
+               <a class="nav-link active" href="#">Home</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#1">About</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#2">Services</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#3">Team</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#4">Connect</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </nav>
+     <!-- lat anh  -->
+     <div id="slides" class="carousel slide" data-ride="carousel">
+       <ul class="carousel-indicators">
+         <li data-target="#slides" data-slide-to="0" class="active"></li>
+         <li data-target="#slides" data-slide-to="1"></li>
+         <li data-target="#slides" data-slide-to="2"></li>		
+         <li data-target="#slides" data-slide-to="3"></li>
+       </ul>
+       <div class="carousel-inner">
+         <div class="carousel-item active">
+           <img src="./images/ina.png">
+           <div class="carousel-caption">
+             <button id="hanhdz" type="button" class="btn btn-primary btn-lg">Register an account</button>
+           </div>
+         </div>
+         <div class="carousel-item">
+           <img src="./images/inb.png">
+         </div>
+         <div class="carousel-item">
+           <img src="./images/inc.png">
+         </div>
+         <div class="carousel-item">
+           <img src="./images/ind.png">
+         </div>
+       </div>
+     </div>
+     <!-- jumbotron -->
+     <div id = "1" class="container-fluid">
+       <div class="jumbotron">
+         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+           <p>We provide solutions, design consulting and services on smart parking </p>
+         </div>
+         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+           <a href="#">
+             <button type="button" class="btn btn-outline-secondary">call a host</button>
+           </a>
+         </div>
+       </div>
+     </div>
+     <div class="container-fluid padding">
+       <div class="row welcome text-center">
+         <div class="col-12">
+           <h1 class="display-4"> H-N-B solution company </h1>
+         </div>
+         <!-- Horizontal Rule -->
+         <hr> 
+         <div class="col-12">
+           <h3 id="2" >Welcome to our services of H-N-B solution company, we are confident to satisfy all the most demanding customers.</h3>
+         </div>
+       </div>
+     </div>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     <div  id="dichvu"  >
+     
+     <div class="container-fluid padding">
+       <div class="row text-center padding">
+         <div class="col-xs-12 col-sm-6 col-md-4 ">
+           <i class="fab fa-react"></i>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.47378831685!2d105.73291811467445!3d21.053730985984824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31345457e292d5bf%3A0x20ac91c94d74439a!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1640321550961!5m2!1svi!2s" width="330" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>	
+           <h3> Smart parking HaUI </h3>
+           <p> spaces left : 20  </p>	
+           <a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Ngo%E1%BA%A1i+th%C6%B0%C6%A1ng/@21.023038,105.803243,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab5d5161f909:0x4dafaf500ce22be3!8m2!3d21.023033!4d105.805437?hl=vi-VN"> Link map </a>				
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-4">
+           <i class="fab fa-react"></i>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.241197280575!2d105.80324831467375!3d21.02303298600151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab5d5161f909%3A0x4dafaf500ce22be3!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBOZ2_huqFpIHRoxrDGoW5n!5e0!3m2!1svi!2s!4v1640323325250!5m2!1svi!2s" width="330" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>	
+           <h3> Smart parking FTU</h3>
+           <p> spaces left : 60  </p>	
+           <a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Th%C6%B0%C6%A1ng+m%E1%BA%A1i/@21.0367059,105.7728295,17z/data=!3m1!4b1!4m5!3m4!1s0x313454b6163c392f:0x1ebf64facbb56d03!8m2!3d21.0367009!4d105.7750235?hl=vi-VN"> link map </a>
+         </div>
+         <div class="col-sm-12 col-md-4">
+           <i class="fab fa-react"></i>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.113240922964!2d105.80123181467398!3d21.02815448599871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab424a50fff9%3A0xbe3a7f3670c0a45f!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBHaWFvIHRow7RuZyBW4bqtbiB04bqjaQ!5e0!3m2!1svi!2s!4v1640323280223!5m2!1svi!2s" width="330" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+           <h3> Smart parking UTC  </h3>	
+           <div> spaces left :<span id="otrong"> </span></div>
+           <a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Giao+th%C3%B4ng+V%E1%BA%ADn+t%E1%BA%A3i/@21.0281595,105.8012265,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab424a50fff9:0xbe3a7f3670c0a45f!8m2!3d21.0281545!4d105.8034205?hl=vi-VN"> link map </a>
+         </div>
+       </div>	
+       <hr class="my-4">	
+     </div>
+    </div>
+     
+     <hr class="my-2">
+     <button class="fun" data-toggle="collapse" data-target="#emoji">
+       information system to contact us
+     </button>
+     
+     </div>
+     <div class="container-fluid padding">
+       <div class="row welcome text-center">
+         <div class="col-12">
+           <h1  id = "3"  class="display-4">Meet our team members</h1>
+         </div>
+       </div>
+     </div>
+     <div class="container-fluid padding">
+       <div class="row padding">
+         <div class="col-md-4">
+           <div class="card">
+             <img class="card-img-top" src="./images/ina1.png">
+             <div class="card-body">
+               <h4 class="card-title">Phạm Văn Hạnh </h4>
+               <p class="card-text">Pham Van Hanh is a fullstack developer </p>
+               <a href="https://www.facebook.com/me/">facebook </a>
+             </div>
+           </div>
+         </div>
+         <div class="col-md-4">
+           <div class="card">
+             <img class="card-img-top" src="./images/ina3.png">
+             <div class="card-body">
+               <h4 class="card-title">Nguyễn Vũ Nam </h4>
+               <p class="card-text">Nguyen Vu Nam is a sql server</p>
+               <a href="https://www.facebook.com/profile.php?id=100042028462128&__tn__=%3C">facebook </a>
+             </div>
+           </div>
+         </div>
+         <div class="col-md-4">
+           <div class="card">
+             <img class="card-img-top" src="./images/ina2.png">
+             <div class="card-body">
+               <h4 class="card-title"> Phan Trọng Bách</h4>
+               <p class="card-text">Phan Trong Bach is the company's CEO </p>
+               <a href="https://www.facebook.com/bachkom1?__tn__=%3C">facebook</a>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     
+     <div class="container-fluid padding">	
+       <div class="row text-center padding">
+         <div class="col-12">
+           <h2 id = "4">Contact us</h2>
+         </div>
+         <div class="col-12 social padding">
+           <a href="#"><i class="fab fa-facebook"></i></a>
+           <a href="#"><i class="fab fa-twitter"></i></a>
+           <a href="#"><i class="fab fa-google-plus-g"></i></a>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+           <a href="#"><i class="fab fa-youtube"></i></a>
+         </div>
+       </div>
+     </div>	
+     <footer>
+       <div class="container-fluid padding">	
+         <div class="row text-center">
+           <div class="col-md-4">
+             <img src="./images/logo.png">
+             <hr class="light">
+             <p>0349094957</p>
+             <p>phanh7540@gmail.com</p>
+             <p> University of Transport and Communications, Hanoi, Vietnam</p>
+           </div>
+         </div>
+       </div>
+     </footer>
+      </div>
+
+    </div>
+
+    <script src="/public/socket.io.js"></script> 
+    <script src="/public/xuly.js"></script>
+  </body>
+</html>

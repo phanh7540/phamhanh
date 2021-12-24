@@ -3,16 +3,26 @@ var express = require("express");
 var app = express();
 app.use(express.static("public"));
 var ip = require('ip');
-app.set("view engine", "ejs");
-app.set("views", "./views");
+//app.set("view engine", "ejs");
+//app.set("views", "./views");
 
-var server = require("http").Server(app);
+
+const path = require("path");
+app.use("/public", express.static(path.join(__dirname, "public")));
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "trang_chu.html"));
+});
+
+var server = require("http").createServer(app);
 var io = require("socket.io")(server);
-server.listen(process.env.PORT || 3000 );
-
+server.listen(PORT);
+console.log("Server nodejs chay tai dia chi: " + ip.address() + ":" + PORT)
 
 var mangaUsers=[];
 var mangbUsers=[];
+var querystring = require('querystring');
+
 
 io.on("connection", function(socket){
     console.log("Co nguoi ket noi " + socket.id);// hiển thi id kết nối 
@@ -39,6 +49,11 @@ io.on("connection", function(socket){
           io.sockets.emit("server-send-danhsach-Usersb", mangbUsers);// gửi thông báo đăng ký thành công về người dùng 
       }
     });
+    socket.on("otrong", function(data){
+    console.log(data)
+          io.sockets.emit("otrong", data);// gửi thông báo đăng ký thành công về người dùng 
+    });
+
  
 
 
